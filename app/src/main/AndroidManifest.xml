@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.NewsApplication">
-        <activity android:name=".DetailActivity"></activity>
+        <activity android:name=".newsQuiz" />
+        <activity android:name=".DetailActivity" />
         <activity android:name=".AffectedCountries" />
         <activity android:name=".NewsFeed" />
         <activity android:name=".Coronavirus" />

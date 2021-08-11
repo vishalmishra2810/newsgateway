@@ -30,7 +30,7 @@
             android:orientation="vertical">
 
             <Button
-                android:id="@+id/button14"
+                android:id="@+id/textRecognition"
                 android:layout_width="match_parent"
                 android:layout_height="106dp"
                 android:layout_above="@+id/button3"
@@ -40,8 +40,25 @@
                 android:layout_marginEnd="0dp"
                 android:layout_marginRight="0dp"
                 android:layout_marginBottom="0dp"
+                android:text="Text Recognition"
+                android:textColor="#FF9800"
+                android:textSize="36sp"
+                android:textStyle="bold"
+                app:backgroundTint="#000000" />
+
+            <Button
+                android:id="@+id/button14"
+                android:layout_width="match_parent"
+                android:layout_height="106dp"
+                android:layout_above="@+id/button3"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginBottom="0dp"
                 android:text="News Feed"
                 android:textColor="#FF9800"
+                android:textColorHighlight="#FFFFFF"
                 android:textSize="36sp"
                 android:textStyle="bold"
                 app:backgroundTint="#000000" />
@@ -159,7 +176,7 @@
                 android:textStyle="bold" />
 
             <Button
-                android:id="@+id/button13"
+                android:id="@+id/quizButton"
                 android:layout_width="match_parent"
                 android:layout_height="106dp"
                 android:layout_alignParentBottom="true"
@@ -168,7 +185,9 @@
                 android:layout_marginEnd="0dp"
                 android:layout_marginRight="0dp"
                 android:layout_marginBottom="0dp"
-                android:text="Politics"
+                android:text="News Gateway Quiz"
+                android:textColor="#FF9800"
+                android:textColorHighlight="#FFFFFF"
                 android:textSize="36sp"
                 android:textStyle="bold" />
 

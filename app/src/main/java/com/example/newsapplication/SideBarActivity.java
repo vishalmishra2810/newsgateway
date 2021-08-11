@@ -25,6 +25,8 @@ public class SideBarActivity extends AppCompatActivity implements View.OnClickLi
     private Button button3;
     private Button button5;
     private Button button14;
+    private Button quizButton;
+    private Button textRecognition;
 
     private AppBarConfiguration mAppBarConfiguration;
 
@@ -38,6 +40,8 @@ public class SideBarActivity extends AppCompatActivity implements View.OnClickLi
         button3 = (Button) findViewById(R.id.button3);
         button5 = (Button) findViewById(R.id.button5);
         button14 = (Button) findViewById(R.id.button14);
+        quizButton = (Button) findViewById(R.id.quizButton);
+//        quizButton = (Button) findViewById(R.id.textRecognition);
 
 
         button.setOnClickListener(this);
@@ -45,7 +49,8 @@ public class SideBarActivity extends AppCompatActivity implements View.OnClickLi
         button3.setOnClickListener(this);
         button5.setOnClickListener(this);
         button14.setOnClickListener(this);
-
+        quizButton.setOnClickListener(this);
+//        textRecognition.setOnClickListener(this);
 
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -111,6 +116,14 @@ public class SideBarActivity extends AppCompatActivity implements View.OnClickLi
                 openActivity6();
                 Toast.makeText(this, "News Feed", Toast.LENGTH_SHORT).show();
                 break;
+            case R.id.quizButton:
+                openActivity8();
+                Toast.makeText(this, "News Gateway Quiz", Toast.LENGTH_SHORT).show();
+                break;
+//            case R.id.textRecognition:
+//                openActivity8();
+//                Toast.makeText(this, "Text Recognition", Toast.LENGTH_SHORT).show();
+//                break;
     }
 }
     public void openActivity2() {
@@ -133,5 +146,13 @@ public class SideBarActivity extends AppCompatActivity implements View.OnClickLi
     public void openActivity6() {
         Intent intent_newsFeed = new Intent(this, NewsFeed.class);
         startActivity(intent_newsFeed);
+    }
+    public void openActivity8() {
+        Intent intent_newsFeed = new Intent(this, newsQuiz.class);
+        startActivity(intent_newsFeed);
+
+//    public void openActivity8() {
+//        Intent intent_newsFeed = new Intent(this, newsQuiz.class);
+//        startActivity(intent_newsFeed);
     }
 }
