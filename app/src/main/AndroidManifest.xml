@@ -11,10 +11,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.NewsApplication">
+        <activity android:name=".NewsDetailActivity"></activity>
+        <activity android:name=".NewsFeed" />
         <activity android:name=".newsQuiz" />
         <activity android:name=".DetailActivity" />
         <activity android:name=".AffectedCountries" />
-        <activity android:name=".NewsFeed" />
         <activity android:name=".Coronavirus" />
         <activity android:name=".Entertainment" />
         <activity android:name=".Politics" />
